@@ -1,0 +1,27 @@
+<div class="conteinerCrearPersona">
+    <form [formGroup]="formularioPersona" (ngSubmit)="onSubmit()">
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" formControlName="nombre" />
+        </div>
+        <div>
+          <label for="apellido">Apellido:</label>
+          <input type="text" id="apellido" formControlName="apellido" />
+        </div>
+        <div>
+          <label for="edad">Edad:</label>
+          <input type="number" id="edad" formControlName="edad" />
+        </div>
+        <div>
+          <label for="direccion">Dirección:</label>
+          <input type="text" id="direccion" formControlName="direccion" />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" formControlName="email" />
+        </div>
+        <button type="submit" [disabled]="formularioPersona.invalid">Crear Persona</button>
+      </form>
+</div>
+
+  
